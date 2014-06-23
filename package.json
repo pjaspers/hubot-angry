@@ -1,6 +1,6 @@
 {
   "name": "hubot-angry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hubot script to display an angry animal, when needed.",
   "main": "angry.coffee",
   "repository": {
