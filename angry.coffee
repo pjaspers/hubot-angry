@@ -36,4 +36,4 @@ lods = ["http://www.sadanduseless.com/wp-content/uploads/2014/04/angry1.jpg",
 
 module.exports = (robot) ->
   robot.hear /\b(animal lod|angry|boos)\b/i, (msg) ->
-    msg.reply msg.random lods
+    msg.send msg.random lods

@@ -28,19 +28,19 @@ describe 'a hubot doing his thing', () ->
     done()
 
   it "responds when it hears angry", (done) ->
-    robot.adapter.on "reply", (envelope, strings) ->
+    robot.adapter.on "send", (envelope, strings) ->
       expect(strings[0]).to.be.a('string')
       done()
     robot.adapter.receive new TextMessage(user, "I am ANGRY")
 
   it "responds when it hears boos", (done) ->
-    robot.adapter.on "reply", (envelope, strings) ->
+    robot.adapter.on "send", (envelope, strings) ->
       expect(strings[0]).to.be.a('string')
       done()
     robot.adapter.receive new TextMessage(user, "Beestenbos is boos")
 
   it "responds when asked for an animal lod", (done) ->
-    robot.adapter.on "reply", (envelope, strings) ->
+    robot.adapter.on "send", (envelope, strings) ->
       expect(strings[0]).to.be.a('string')
       done()
     robot.adapter.receive new TextMessage(user, "animal lod me!")
